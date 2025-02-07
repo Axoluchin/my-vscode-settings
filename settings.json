@@ -3,7 +3,7 @@
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "terminal.integrated.fontFamily": "'MesloLGS NF'",
-  "editor.fontFamily": "'MesloLGS NF', Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "'FiraCode NF', 'firaCode Nerd Font', 'Input Mono', 'MesloLGS NF', Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.linkedEditing": true,
   "security.workspace.trust.untrustedFiles": "open",
@@ -16,15 +16,25 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
   "typescript.updateImportsOnFileMove.enabled": "always",
   "terminal.integrated.minimumContrastRatio": 0,
   "git.confirmSync": false,
   "explorer.confirmDelete": false,
+  "explorer.fileNesting.patterns": {
+    "pubspec.yaml": "pubspec.lock,pubspec_overrides.yaml,.packages,.flutter-plugins,.flutter-plugins-dependencies,.metadata",
+    "*.dart": "${capture}.g.dart"
+  },
   "workbench.list.smoothScrolling": true,
   "editor.fastScrollSensitivity": 1,
   "editor.smoothScrolling": false,
   "editor.stickyScroll.enabled": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "exceptionptr.vscode-prettier-eslint",
   "editor.accessibilitySupport": "off",
   "diffEditor.ignoreTrimWhitespace": false,
   "terminal.integrated.customGlyphs": false,
@@ -52,6 +62,15 @@
     "editorCursor.background": "#9f8107",
     "editorCursor.foreground": "#ab953a"
   },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.selectionHighlight": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "allDocuments"
+  },
   "svg.preview.mode": "img",
   "security.workspace.trust.banner": "never",
   "security.workspace.trust.emptyWindow": true,
@@ -66,7 +85,7 @@
     "source.fixAll.stylelint": "explicit"
   },
   "json.schemas": [],
-  "editor.defaultColorDecorators": true,
+  "editor.defaultColorDecorators": "auto",
   "workbench.layoutControl.enabled": false,
   "window.menuBarVisibility": "compact",
   "window.commandCenter": false,
@@ -76,14 +95,65 @@
   "terminal.integrated.stickyScroll.enabled": true,
   "workbench.tree.enableStickyScroll": true,
   "notebook.stickyScroll.enabled": true,
-  "settingsSync.ignoredExtensions": ["ms-dotnettools.csdevkit"],
-  "editor.formatOnPaste": true,
+  "settingsSync.ignoredExtensions": [
+    "ms-dotnettools.csdevkit"
+  ],
   "editor.formatOnSave": true,
+  "window.zoomLevel": 1,
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
   },
   "notebook.compactView": false,
+  "cSpell.language": "en,es-ES,es",
+  "cSpell.userWords": [
+    "apod",
+    "astrojs",
+    "Backoffice",
+    "CDMX",
+    "clabe",
+    "collatz",
+    "Damián",
+    "graphik",
+    "Graphik",
+    "hookform",
+    "Huchín",
+    "iconoir",
+    "keyframes",
+    "mingcute",
+    "mubi",
+    "Mubi",
+    "nextui",
+    "notistack",
+    "nowrap",
+    "nums",
+    "orbi",
+    "Pressable",
+    "spei",
+    "SPEI",
+    "spotify",
+    "strapi",
+    "sublink",
+    "tailwindcss",
+    "tauri",
+    "webp"
+  ],
   "githubPullRequests.pullBranch": "never",
   "markdown-preview-enhanced.previewTheme": "atom-dark.css",
   "liveServer.settings.donotShowInfoMsg": true,
+  "cSpell.enableFiletypes": ["astro", "mdx"],
+  "redhat.telemetry.enabled": false,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "playwright.reuseBrowser": false,
+  "supermaven.enableFixWithSupermaven": false,
+  "remote.portsAttributes": {
+    "5173": {
+      "protocol": "https"
+    }
+  },
+  "vs-code-prettier-eslint.prettierLast": true
 }
